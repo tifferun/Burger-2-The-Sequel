@@ -1,3 +1,5 @@
+//below is the entire code for the ajax call and the structure for the javascript//
+
 $(document).ready(function() {
     
     $(".devour-form").on("submit", function(event) {

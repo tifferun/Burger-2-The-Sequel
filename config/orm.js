@@ -3,6 +3,8 @@
 
 var connection = require("./connection.js");
 
+//below is a funciton being created that includes and object of arrays. This is an empty array for placement of data to be pushed into.  
+
 function printQuestionMarks(num) {
   var arr = [];
 
@@ -65,6 +67,8 @@ var orm = {
     queryString += " WHERE ";
     queryString += condition;
 
+
+  // below is code stating to console log the query string and if that does not happen to throw an error. 
     console.log(queryString);
     connection.query(queryString, function(err, result) {
       if (err) {
@@ -74,5 +78,6 @@ var orm = {
     });
   }
 };
+//below states that module.exports is equal to orm as this is the orm.js code.
 
 module.exports = orm;
